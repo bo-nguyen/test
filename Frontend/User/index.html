@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Medilab Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="../assets/vendor/jquery/jquery-3.7.1.js"></script>
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+  <!-- Dialog CSS File -->
+  <link rel="stylesheet" href="../assets/css/dialog.css">
+
+  <!-- =======================================================
+  * Template Name: Medilab
+  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a
+              href="mailto:contact@example.com">contact@example.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="branding d-flex align-items-center">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="../assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">PHÒNG KHÁM</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Trang chủ<br></a></li>
+            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="#services">Dịch vụ</a></li>
+            <li><a href="#materials">Cơ sở</a></li>
+            <li><a href="#doctors">Bác sĩ</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <a class="cta-btn d-none d-sm-block" href="#appointment">Đặt lịch khám</a>
+
+        <div class="dropdown cta-btn" style="background-color: white;">
+          <!-- <button type="button" class="btn btn-getstarted" data-bs-toggle="dropdown"> -->
+          <div class="" data-bs-toggle="dropdown">
+            <img style="height: 35px; width: 35px;" src="../assets/img/user.png" class="rounded-circle">
+            <script>
+              $(document).ready(function () {
+                // Lấy tên người dùng từ localStorage
+                const loggedInUsername = localStorage.getItem('userName');
+
+                // Kiểm tra nếu có tên người dùng và cập nhật hiển thị
+                if (loggedInUsername) {
+                  $('#displayUser').text(loggedInUsername); // Cập nhật phần tử #displayUser
+                }
+              });
+            </script>
+            <span id="displayUser" class="text-primary">Chung</span>
+          </div>
+          <!-- </button> -->
+          <ul class="dropdown-menu border-0"
+            style="box-shadow: 0px 0px 30px color-mix(in srgb, var(--default-color), transparent 85%);">
+            <li class="p-2">
+              <a class="dropdown-item" href="ThongTinCaNhan.html">
+                <i class="bi bi-person p-1 me-2"></i>Thông tin cá nhân</a>
+            </li>
+            <li class="p-2"><a class="dropdown-item" href="#">
+                <i class="bi bi-question-circle p-1 me-2"></i>Trợ giúp</a></li>
+            <li class="p-2"><a class="dropdown-item" href="../login.html">
+                <i class="bi bi-box-arrow-in-right p-1 me-2"></i>Đăng xuất</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+      <img src="../assets/img/hero-bg.jpg" alt="Phòng khám y khoa hiện đại" data-aos="fade-in">
+
+      <div class="container position-relative">
+
+        <!-- Welcome -->
+        <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
+          <h1>CHÀO MỪNG <br>ĐẾN VỚI PHÒNG KHÁM</h1>
+          <p>Chăm sóc sức khỏe toàn diện cho bạn và gia đình</p>
+        </div><!-- End Welcome -->
+
+        <!-- Nội dung chính -->
+        <div class="content row gy-4">
+
+          <!-- Vì sao chọn chúng tôi -->
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
+              <h3>Tại sao nên chọn phòng khám của chúng tôi?</h3>
+              <p>
+                Phòng khám tự hào với đội ngũ bác sĩ giàu kinh nghiệm và trang thiết bị hiện đại.
+                Chúng tôi cam kết mang đến dịch vụ y tế chất lượng cao với chi phí hợp lý. Sức khỏe của bạn là
+                ưu tiên hàng đầu của chúng tôi.
+              </p>
+              <div class="text-center">
+                <a href="#about" class="more-btn">
+                  <span>Tìm hiểu thêm</span> <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Why Box -->
+
+          <!-- Các dịch vụ nổi bật -->
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="d-flex flex-column justify-content-center">
+              <div class="row gy-4">
+
+                <!-- Dịch vụ 1 -->
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
+                    <i class="bi bi-heart-pulse"></i>
+                    <h4>Khám sức khỏe tổng quát</h4>
+                    <p>Kiểm tra toàn diện, phát hiện sớm các vấn đề sức khỏe để có hướng điều trị kịp thời.</p>
+                  </div>
+                </div><!-- End Icon Box -->
+
+                <!-- Dịch vụ 2 -->
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
+                    <i class="bi bi-stethoscope"></i>
+                    <h4>Chuyên khoa nội - ngoại</h4>
+                    <p>Đội ngũ bác sĩ chuyên khoa giàu kinh nghiệm, mang đến chẩn đoán và điều trị chính xác.</p>
+                  </div>
+                </div><!-- End Icon Box -->
+
+                <!-- Dịch vụ 3 -->
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
+                    <i class="bi bi-capsule"></i>
+                    <h4>Dược phẩm và tư vấn</h4>
+                    <p>Cung cấp dược phẩm chính hãng và tư vấn dùng thuốc an toàn, hiệu quả.</p>
+                  </div>
+                </div><!-- End Icon Box -->
+
+              </div>
+            </div>
+          </div><!-- End Content -->
+
+        </div><!-- End Nội dung chính -->
+      </div>
+    </section><!-- /Hero Section -->
+
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container">
+
+        <div class="row gy-4 gx-5">
+
+          <!-- Hình ảnh và video -->
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
+            <img src="../assets/img/about.jpg" class="img-fluid" alt="Giới thiệu về phòng khám">
+            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"
+              aria-label="Xem video giới thiệu về phòng khám"></a>
+          </div>
+
+          <!-- Nội dung giới thiệu -->
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <h3>Về Phòng Khám của chúng tôi</h3>
+            <p>
+              Phòng khám tự hào mang đến dịch vụ chăm sóc sức khỏe chất lượng cao với đội ngũ y bác sĩ chuyên môn sâu và
+              trang thiết bị hiện đại. Chúng tôi luôn nỗ lực để đảm bảo mỗi bệnh nhân được điều trị tận tình, chu đáo và
+              hiệu quả nhất.
+            </p>
+
+            <ul>
+              <li>
+                <i class="fa-solid fa-vial-circle-check"></i>
+                <div>
+                  <h5>Kiểm tra sức khỏe định kỳ</h5>
+                  <p>Cung cấp các gói khám sức khỏe toàn diện, giúp phát hiện sớm và phòng ngừa bệnh tật.</p>
+                </div>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-pump-medical"></i>
+                <div>
+                  <h5>Trang thiết bị y tế hiện đại</h5>
+                  <p>Sử dụng máy móc tiên tiến trong chẩn đoán và điều trị, đảm bảo độ chính xác cao.</p>
+                </div>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-heart-circle-xmark"></i>
+                <div>
+                  <h5>Chăm sóc tận tâm, chu đáo</h5>
+                  <p>Đội ngũ y bác sĩ giàu kinh nghiệm luôn lắng nghe và tư vấn tận tình cho từng bệnh nhân.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /About Section -->
+
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="fa-solid fa-user-doctor"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Bác sĩ</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="fa-regular fa-hospital"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Cơ sở</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="fas fa-flask"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Phòng nghiên cứu</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="fas fa-award"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Giải thưởng</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Cung cấp các dịch vụ khám chữa bệnh đa khoa, tiên tiến, hiện đại nhất</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <a  class="btn btn-primary" href="xemdichvu.html">Xem dịch vụ</a>
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="appointment section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Đặt lịch khám</h2>
+        <p>Bạn hãy đặt lịch trước khi đến khám để không phải chờ đợi nhé!</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <form class="php-email-form">
+          <div class="row">
+            <div class="col-md-4 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Họ tên" required>
+            </div>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Số điện thoại" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 form-group mt-3">
+              <input type="text" name="address" class="form-control" id="address" placeholder="Địa chỉ">
+            </div>
+            <div class="col-md-4 form-group mt-3">
+              <select name="gender" id="gender" class="form-select">
+                <option value="">Giới tính</option>
+                <option value="0">Nam</option>
+                <option value="1">Nữ</option>
+                <option value="2">Khác</option>
+              </select>
+            </div>
+            <div class="col-md-4 form-group mt-3">
+              <input type="text" name="insurance" class="form-control" id="insurance"
+                placeholder="Thông tin bảo hiểm y tế">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 form-group mt-3">
+              <input type="date" name="appointment-date" class="form-control datepicker" id="appointment-date"
+                placeholder="Appointment Date" required>
+            </div>
+            <div class="col-md-4 form-group mt-3">
+              <select name="shift" id="shift" class="form-select" required>
+                <option value="">Ca khám</option>
+                <option value="0">7h - 8h</option>
+                <option value="1">8h - 9h</option>
+                <option value="2">9h - 10h</option>
+              </select>
+            </div>
+            <div class="col-md-4 form-group mt-3">
+              <select name="doctor" id="doctor" class="form-select" required>
+                <option value="">Select Doctor</option>
+                <option value="Doctor 1">Doctor 1</option>
+                <option value="Doctor 2">Doctor 2</option>
+                <option value="Doctor 3">Doctor 3</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group mt-3">
+            <textarea class="form-control" id="message" name="message" rows="5"
+              placeholder="Khác (Lý do khám, Bệnh lý đã có, Tiền sử bệnh, ...)"></textarea>
+          </div>
+          <div class="mt-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+            <div class="text-center">
+              <button type="submit" id="btnDatLich">Đặt lịch khám</button>
+              <button type="button" id="btnXemLichKham" data-bs-toggle="modal"
+                data-bs-target="#modalEditAppointment">Xem lịch khám</button>
+            </div>
+
+          </div>
+        </form>
+
+      </div>
+
+
+    </section><!-- /Appointment Section -->
+
+    <!-- Dialog hiển thị đơn đăng ký lịch khám -->
+    <div class="modal dialog appointment" id="modalEditAppointment">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Thông tin lịch khám</h4>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+              <form class="php-email-form">
+                <div class="row">
+                  <div class="col-md-4 form-group">
+                    <input type="text" name="name" class="form-control" id="edit-name" placeholder="Họ tên" required="">
+                  </div>
+                  <div class="col-md-4 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="edit-email" placeholder="Email">
+                  </div>
+                  <div class="col-md-4 form-group mt-3 mt-md-0">
+                    <input type="tel" class="form-control" name="phone" id="edit-phone" placeholder="Số điện thoại"
+                      required="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 form-group mt-3">
+                    <input type="text" name="address" class="form-control" id="edit-address" placeholder="Địa chỉ">
+                  </div>
+                  <div class="col-md-4 form-group mt-3">
+                    <select name="gender" id="edit-gender" class="form-select">
+                      <option value="">Giới tính</option>
+                      <option value="0">Nam</option>
+                      <option value="1">Nữ</option>
+                      <option value="2">Khác</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 form-group mt-3">
+                    <input type="text" name="insurance" class="form-control" id="edit-insurance"
+                      placeholder="Thông tin bảo hiểm y tế">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 form-group mt-3">
+                    <input type="date" name="appointment-date" class="form-control datepicker"
+                      id="edit-appointment-date" placeholder="Appointment Date" required="">
+                  </div>
+                  <div class="col-md-4 form-group mt-3">
+                    <select name="shift" id="edit-shift" class="form-select" required="">
+                      <option value="">Ca khám</option>
+                      <option value="0">7h - 8h</option>
+                      <option value="1">8h - 9h</option>
+                      <option value="2">9h - 10h</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 form-group mt-3">
+                    <select name="doctor" id="edit-doctor" class="form-select" required="">
+                      <option value="">Select Doctor</option>
+                      <option value="Doctor 1">Doctor 1</option>
+                      <option value="Doctor 2">Doctor 2</option>
+                      <option value="Doctor 3">Doctor 3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group mt-3">
+                  <textarea class="form-control" id="edit-message" name="message" rows="5"
+                    placeholder="Khác (Lý do khám, Bệnh lý đã có, Tiền sử bệnh, ...)"></textarea>
+                </div>
+                <div class="mt-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+                  <div class="text-center">
+                    <button type="button" id="btnExitDialog" style="background-color: #df1529;"
+                      data-bs-dismiss="modal">Thoát</button>
+                    <button type="submit" id="btnEditAppointment">Sửa</button>
+                  </div>
+
+                </div>
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Materials Section -->
+    <section id="materials" class="medical-supplies section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Vật Tư Y Tế</h2>
+        <p>Danh sách các vật tư y tế với hình ảnh minh họa và thông tin chi tiết</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <!-- Vật tư 1: Máy đo điện tim -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="../assets/img/medical-supplies/item-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Máy đo điện tim</h4>
+                <p><strong>Chức năng:</strong> Máy đo điện tim (ECG) là thiết bị giúp ghi lại các tín hiệu điện của tim
+                  nhằm phát hiện rối loạn nhịp tim, cơn đau tim, và các vấn đề tim mạch khác.</p>
+                <p><strong>Ứng dụng:</strong> Sử dụng trong chẩn đoán, theo dõi bệnh nhân bị bệnh tim mạch tại bệnh viện
+                  hoặc phòng khám.</p>
+                <p><strong>Đặc điểm kỹ thuật:</strong> Máy đo điện tim 12 kênh, có thể ghi liên tục, màn hình cảm ứng
+                  hiển thị tín hiệu rõ ràng, có khả năng kết nối không dây.</p>
+              </div>
+            </div>
+          </div><!-- End Medical Supply -->
+
+          <!-- Vật tư 2: Máy khử rung tim -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="../assets/img/medical-supplies/item-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Máy khử rung tim</h4>
+                <p><strong>Chức năng:</strong> Thiết bị khử rung tim tự động (AED) sử dụng xung điện để khôi phục nhịp
+                  tim bình thường cho những bệnh nhân bị ngừng tim đột ngột.</p>
+                <p><strong>Ứng dụng:</strong> Dùng trong cấp cứu y tế khẩn cấp, bệnh viện, phòng khám hoặc có thể được
+                  đặt tại nơi công cộng như sân bay, trường học.</p>
+                <p><strong>Đặc điểm kỹ thuật:</strong> Nhỏ gọn, dễ sử dụng, tự động phân tích nhịp tim, có màn hình
+                  hướng dẫn bằng giọng nói và văn bản, pin có thời lượng dài.</p>
+              </div>
+            </div>
+          </div><!-- End Medical Supply -->
+
+          <!-- Vật tư 3: Ống thông tiểu -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="../assets/img/medical-supplies/item-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Ống thông tiểu</h4>
+                <p><strong>Chức năng:</strong> Ống thông tiểu giúp dẫn lưu nước tiểu ra ngoài, hỗ trợ điều trị bệnh nhân
+                  sau phẫu thuật hoặc có các vấn đề về đường tiểu.</p>
+                <p><strong>Ứng dụng:</strong> Sử dụng trong các bệnh viện và phòng khám trong quá trình điều trị bệnh
+                  nhân có vấn đề về bàng quang, niệu đạo.</p>
+                <p><strong>Đặc điểm kỹ thuật:</strong> Làm từ nhựa y tế mềm dẻo, có nhiều kích cỡ phù hợp cho từng đối
+                  tượng bệnh nhân, đảm bảo vô trùng.</p>
+              </div>
+            </div>
+          </div><!-- End Medical Supply -->
+
+          <!-- Vật tư 4: Kính hiển vi phẫu thuật -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="../assets/img/medical-supplies/item-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Kính hiển vi phẫu thuật</h4>
+                <p><strong>Chức năng:</strong> Hỗ trợ các bác sĩ quan sát chi tiết các mô nhỏ trong quá trình phẫu thuật
+                  với độ chính xác cao.</p>
+                <p><strong>Ứng dụng:</strong> Được sử dụng trong các ca phẫu thuật thần kinh, mắt, tai mũi họng và các
+                  ca phẫu thuật cần độ chi tiết cao.</p>
+                <p><strong>Đặc điểm kỹ thuật:</strong> Độ phóng đại lớn, chất lượng hình ảnh rõ nét, có đèn LED chiếu
+                  sáng mạnh, điều chỉnh linh hoạt cho nhiều loại phẫu thuật khác nhau.</p>
+              </div>
+            </div>
+          </div><!-- End Medical Supply -->
+
+          <!-- Vật tư 5: Máy đo huyết áp -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="../assets/img/medical-supplies/item-5.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Máy đo huyết áp</h4>
+                <p><strong>Chức năng:</strong> Đo huyết áp, giúp theo dõi và kiểm tra huyết áp của bệnh nhân để phát
+                  hiện và phòng ngừa các vấn đề về tim mạch.</p>
+                <p><strong>Ứng dụng:</strong> Sử dụng rộng rãi trong các bệnh viện, phòng khám và tại gia đình cho người
+                  có nguy cơ cao về các bệnh huyết áp.</p>
+                <p><strong>Đặc điểm kỹ thuật:</strong> Máy đo huyết áp tự động với màn hình hiển thị lớn, sử dụng pin
+                  hoặc nguồn điện, có bộ nhớ lưu trữ kết quả đo.</p>
+              </div>
+            </div>
+          </div><!-- End Medical Supply -->
+
+          <!-- Vật tư 6: Máy siêu âm -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="../assets/img/medical-supplies/item-6.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Máy siêu âm</h4>
+                <p><strong>Chức năng:</strong> Sử dụng sóng siêu âm để quan sát và chẩn đoán các cơ quan bên trong cơ
+                  thể, đặc biệt trong sản khoa để theo dõi thai nhi.</p>
+                <p><strong>Ứng dụng:</strong> Dùng trong chẩn đoán bệnh lý về ổ bụng, tim mạch, và theo dõi sức khỏe
+                  thai nhi trong suốt thai kỳ.</p>
+                <p><strong>Đặc điểm kỹ thuật:</strong> Màn hình màu độ phân giải cao, khả năng ghi và phân tích hình ảnh
+                  siêu âm, đầu dò siêu âm đa tần số.</p>
+              </div>
+            </div>
+          </div><!-- End Medical Supply -->
+
+        </div>
+
+      </div>
+
+
+    </section><!-- /Departments Section -->
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Bác sĩ</h2>
+        <p>Với nhiều y bác sĩ là chuyên gia trong ngành, chúng tôi cam kết mang đến dịch vụ chăm sóc y tế tận tâm và chất lượng cho bệnh nhân.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <a href="ThongTinBacSi.html" style="color: inherit; text-decoration: none;">
+              <div class="team-member d-flex align-items-start">
+                <div class="pic"><img src="../assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Walter White</h4>
+                  <span>Chief Medical Officer</span>
+                  <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                </div>
+              </div>
+            </a>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <a href="#" style="color: inherit; text-decoration: none;">
+              <div class="team-member d-flex align-items-start">
+                <div class="pic"><img src="../assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Anesthesiologist</span>
+                  <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                </div>
+              </div>
+            </a>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <a href="#" style="color: inherit; text-decoration: none;">
+              <div class="team-member d-flex align-items-start">
+                <div class="pic"><img src="../assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>William Anderson</h4>
+                  <span>Cardiology</span>
+                  <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                </div>
+              </div>
+            </a>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <a href="#" style="color: inherit; text-decoration: none;">
+              <div class="team-member d-flex align-items-start">
+                <div class="pic"><img src="../assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Amanda Jepson</h4>
+                  <span>Neurosurgeon</span>
+                  <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                </div>
+              </div>
+            </a>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Doctors Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                <div class="faq-content">
+                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
+                    gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet
+                    id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
+                    elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                <div class="faq-content">
+                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
+                    elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque
+                    eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis
+                    sed odio morbi quis</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet
+                    id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
+                    elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
+                <div class="faq-content">
+                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in.
+                    Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est.
+                    Purus gravida quis blandit turpis cursus in</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
+                <div class="faq-content">
+                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi.
+                    Distinctio ipsam dolore et.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div><!-- End Faq Column-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <div class="container">
+
+        <div class="row align-items-center">
+
+          <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
+            <h3>Testimonials</h3>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+            </p>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <img src="../assets/img/testimonials/testimonials-1.jpg" class="testimonial-img flex-shrink-0"
+                        alt="">
+                      <div>
+                        <h3>Saul Goodman</h3>
+                        <h4>Ceo &amp; Founder</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                        Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at
+                        semper.</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <img src="../assets/img/testimonials/testimonials-2.jpg" class="testimonial-img flex-shrink-0"
+                        alt="">
+                      <div>
+                        <h3>Sara Wilsson</h3>
+                        <h4>Designer</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum
+                        eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim
+                        culpa.</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <img src="../assets/img/testimonials/testimonials-3.jpg" class="testimonial-img flex-shrink-0"
+                        alt="">
+                      <div>
+                        <h3>Jena Karlis</h3>
+                        <h4>Store Owner</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
+                        minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <img src="../assets/img/testimonials/testimonials-4.jpg" class="testimonial-img flex-shrink-0"
+                        alt="">
+                      <div>
+                        <h3>Matt Brandon</h3>
+                        <h4>Freelancer</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim
+                        velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum
+                        veniam.</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <img src="../assets/img/testimonials/testimonials-5.jpg" class="testimonial-img flex-shrink-0"
+                        alt="">
+                      <div>
+                        <h3>John Larson</h3>
+                        <h4>Entrepreneur</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam
+                        enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi
+                        cillum quid.</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Gallery</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="../assets/img/gallery/gallery-1.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="../assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="../assets/img/gallery/gallery-2.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="../assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="../assets/img/gallery/gallery-3.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="../assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="../assets/img/gallery/gallery-4.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="../assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="../assets/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="../assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="../assets/img/gallery/gallery-6.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="../assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="../assets/img/gallery/gallery-7.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="../assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="../assets/img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="../assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+        <iframe style="border:0; width: 100%; height: 270px;"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+          frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div><!-- End Google Maps -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Location</h3>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+1 5589 55488 55</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>info@example.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+              data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Medilab</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Hic solutasetp</h4>
+          <ul>
+            <li><a href="#">Molestiae accusamus iure</a></li>
+            <li><a href="#">Excepturi dignissimos</a></li>
+            <li><a href="#">Suscipit distinctio</a></li>
+            <li><a href="#">Dilecta</a></li>
+            <li><a href="#">Sit quas consectetur</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nobis illum</h4>
+          <ul>
+            <li><a href="#">Ipsam</a></li>
+            <li><a href="#">Laudantium dolorum</a></li>
+            <li><a href="#">Dinera</a></li>
+            <li><a href="#">Trodelas</a></li>
+            <li><a href="#">Flexo</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Medilab</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="../assets/vendor/jquery/jquery-3.7.1.js"></script> -->
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+  <!-- Dialog JS File -->
+  <script src="../assets/js/scheduleappointment.js"></script>
+
+</body>
+
+</html>

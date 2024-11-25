@@ -1,0 +1,54 @@
+/*--------------------------------------------------------------
+# Dialog Edit Appointment (Phần User)
+--------------------------------------------------------------*/
+
+.dialog-edit-appointment .appointment .php-email-form button#btnExitDialog,
+button#btnEditAppointment {
+    width: 111.43px;
+
+}
+
+.dialog-edit-appointment h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.input-error{
+    border-color: #df1529 !important;
+}
+
+.appointment .php-email-form button[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+}
+.appointment .php-email-form button[type=button]:hover {
+  background: #10a43f;
+}
+
+/*--------------------------------------------------------------
+# Dialog Edit Appointment (Phần Admin)
+--------------------------------------------------------------*/
+.modal .row-item, .row-item-long{
+  width: 100%;
+}
+.modal .row-item .input-item{
+  width: 33%;
+  margin-bottom: 10px;
+}
+.modal .row-item .input-item input, select{
+  width: 100%;
+}
+.modal .row-item .input-item select{
+  margin-top: 10px;
+}
+.modal .row-item-long .input-item{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.modal .row-item-long input{
+  width: 100%;
+}
+.modal .row-item .input-item-center{
+  margin: 0 10px;
+}
